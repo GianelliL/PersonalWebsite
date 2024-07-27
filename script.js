@@ -1,19 +1,19 @@
-let text = document.getElementById("text")
-let ocean = document.getElementsById("ocean");
-let grass = document.getElementsById("grass");
-let flowerR = document.getElementsById("flowerR");
-let flowerL = document.getElementsById("flowerL");
-let sky = document.getElementsById("sky");
-let garden = document.getElementsById("garden");
+let text = document.getElementById("text");
+let ocean = document.getElementById("ocean");
+let grass = document.getElementById("grass");
+let flowerr = document.getElementById("flowerright");
+let flowerl = document.getElementById("flowerleft");
+let garden = document.getElementById("garden");
 
 
 window.addEventListener('scroll', () => {
     let value = window.scrollY;
-
-    text.style.marginTop = value * 2.5 + 'px';
-
-    flowerR.style.left = value * -1.5 + "px";
-    flowerL.style.left= value * 1.5 + 'px';
-    ocean.style.top =  value * -1.5 + 'px'
+    grass.style.bottom =  value + -1.5 + 'px';
+    garden.style.top = value + -1.5 + 'px';
+    ocean.style.top =  value + -1.5 + 'px';
+    
+    flowerr.style.left = value + 1.5 + 'px';
+    flowerl.style.left = value - 1.5 + 'px';
+    text.style.marginTop = value + 2.5 + 'px';
 
 });
