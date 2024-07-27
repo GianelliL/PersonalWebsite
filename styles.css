@@ -51,15 +51,16 @@ header {
 }
 
 .parallax {
-    position: reflexive;
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    overflow: hidden;
 }
 
 #text {
-    position: absolute;
+    position: fixed;
     font-size: 5em;
     color: #00CC66;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.2)
@@ -68,13 +69,16 @@ header {
 .parallax img {
     position: absolute;
     top: 0;
-    left: 0;
+
+
     width: 100%;
     pointer-events: none;
+    height: auto;
+    overflow: hidden;
 }
 
 .sec {
-    position: relative;
+    position: absolute;
     background: #ffffff;
     padding: 100px;
 
